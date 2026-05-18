@@ -119,10 +119,7 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             {/* Left */}
             <div>
-              <div className="inline-flex items-center gap-2 bg-red-500/15 border border-red-400/20 text-red-300 text-sm font-semibold px-4 py-2 rounded-full mb-6">
-                <i className="fa-solid fa-certificate text-amber-400"></i>
-                Non-Profit Ã‚Â· Est. 2015 Ã‚Â· Johannesburg, SA
-              </div>
+
               <h1 className="text-5xl md:text-6xl lg:text-7xl font-black text-white leading-[1.05] tracking-tight mb-6">
                 Enabling All
                 <br />
@@ -131,12 +128,12 @@ export default function Home() {
                 to Prosper & Grow
               </h1>
               <p className="text-xl md:text-2xl text-red-200 font-semibold mb-4">
-                Through Mentorship Ã¢â‚¬â€{' '}
+                Through Mentorship
                 <span className="text-amber-400">The Power of Two</span>
               </p>
               <p className="text-base md:text-lg text-slate-300 max-w-xl mb-10 leading-relaxed">
                 We mobilise volunteer mentors and connect them with entrepreneurs, students,
-                and professionals who need their skills and experience Ã¢â‚¬â€ transforming lives
+                and professionals who need their skills and experience transforming lives
                 and building a stronger nation.
               </p>
               <div className="flex flex-wrap gap-4">
@@ -164,7 +161,7 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right Ã¢â‚¬â€ visual card stack */}
+            {/* Right visual card stack */}
             <div className="hidden lg:flex justify-center items-center relative">
               <div className="relative w-full max-w-md">
                 {/* Main card */}
@@ -177,7 +174,7 @@ export default function Home() {
                   </div>
                   <div className="text-white font-black text-2xl mb-1">The Power of Two</div>
                   <p className="text-slate-300 text-sm mb-6">
-                    Mentorship doubles results Ã¢â‚¬â€ people with mentors are twice as likely to succeed.
+                    Mentorship doubles results people with mentors are twice as likely to succeed.
                   </p>
                   <div className="grid grid-cols-2 gap-3">
                     {[
@@ -287,12 +284,12 @@ export default function Home() {
               </h2>
               <p className="text-slate-600 leading-relaxed mb-5 text-lg">
                 The National Mentorship Movement is a platform where mentors and mentees meet
-                to help shape our nation. NMM is more than an idea Ã¢â‚¬â€ it is a belief in the
+                to help shape our nation. NMM is more than an idea it is a belief in the
                 power of the innovative spirit of South Africans to make our country great.
               </p>
               <p className="text-slate-600 leading-relaxed mb-8">
                 We mobilise volunteer mentors willing and able to give back, and match them with
-                those in South Africa who could benefit from their skills and experience Ã¢â‚¬â€ impacting
+                those in South Africa who could benefit from their skills and experience impacting
                 both. As a result, we are grooming future entrepreneurs, developing confident individuals,
                 transforming the economy, and building trusted relationships across society.
               </p>
@@ -330,7 +327,7 @@ export default function Home() {
             <span className="section-tag">Simple Process</span>
             <h2 className="section-heading">How Mentorship Works</h2>
             <p className="section-subheading mx-auto">
-              Three easy steps to begin a transformative mentorship journey Ã¢â‚¬â€ for both mentors and mentees.
+              Three easy steps to begin a transformative mentorship journey for both mentors and mentees.
             </p>
           </div>
 
@@ -512,7 +509,7 @@ export default function Home() {
             <span className="section-tag">Join the Movement</span>
             <h2 className="section-heading">Ready to Make a Difference?</h2>
             <p className="section-subheading mx-auto">
-              Whether you have experience to share or goals to achieve Ã¢â‚¬â€ there is a place for you in the NMM community.
+              Whether you have experience to share or goals to achieve there is a place for you in the NMM community.
             </p>
           </div>
 
@@ -615,7 +612,7 @@ export default function Home() {
             <div>
               <h3 className="text-2xl font-extrabold text-white mb-2">Have Questions?</h3>
               <p className="text-slate-400">
-                Reach out to the NMM team Ã¢â‚¬â€ we&apos;d love to hear from you.
+                Reach out to the NMM team we&apos;d love to hear from you.
               </p>
             </div>
             <div className="flex flex-wrap gap-4">

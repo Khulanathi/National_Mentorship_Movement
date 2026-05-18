@@ -20,7 +20,7 @@ const allPrograms = [
     status: 'Active',
     icon: 'fa-solid fa-building-columns',
     color: 'bg-orange-500',
-    desc: 'NMM mobilises, trains and matches Nedbank staff volunteers to Nedbank-supported NGOs and their beneficiaries Ã¢â‚¬â€ driving meaningful community impact through staff engagement.',
+    desc: 'NMM mobilises, trains and matches Nedbank staff volunteers to Nedbank-supported NGOs and their beneficiaries driving meaningful community impact through staff engagement.',
     tags: ['Staff Volunteers', 'NGO Beneficiaries', 'CSI Programme'],
   },
   {
@@ -90,7 +90,7 @@ const allPrograms = [
     status: 'Previous',
     icon: 'fa-solid fa-landmark',
     color: 'bg-indigo-500',
-    desc: 'In partnership with ULP Ã¢â‚¬â€ interactive forums and group and one-on-one mentorship to develop a strong community of confident, financially literate and ethical leaders.',
+    desc: 'In partnership with ULP interactive forums and group and one-on-one mentorship to develop a strong community of confident, financially literate and ethical leaders.',
     tags: ['Leadership Development', 'Financial Literacy', 'Ethics'],
   },
   {
@@ -173,7 +173,7 @@ export default function Programs() {
             <span className="section-tag">How We Partner</span>
             <h2 className="section-heading">Our Partnership Model</h2>
             <p className="section-subheading mx-auto">
-              Our model is inherently one of collaboration Ã¢â‚¬â€ we design bespoke programmes with partners across the public, private, and NGO sectors.
+              Our model is inherently one of collaboration we design bespoke programmes with partners across the public, private, and NGO sectors.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -273,7 +273,7 @@ export default function Programs() {
               <h2 className="section-heading mb-5">Entrepreneurship Centre</h2>
               <p className="text-slate-600 leading-relaxed mb-5">
                 The NMM Entrepreneurship Centre is dedicated to supporting South African entrepreneurs
-                at every stage of their journey Ã¢â‚¬â€ from idea to launch, and from survival to scale.
+                at every stage of their journey from idea to launch, and from survival to scale.
               </p>
               <p className="text-slate-600 leading-relaxed mb-8">
                 Through structured mentorship programmes, access to experienced business mentors, and

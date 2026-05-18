@@ -24,7 +24,7 @@ export default function Contact() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-            {/* Form Ã¢â‚¬â€ takes 3 of 5 cols */}
+            {/* Form takes 3 of 5 cols */}
             <div className="lg:col-span-3 animate-in">
               <h2 className="text-2xl font-extrabold text-slate-900 mb-2">Send us a Message</h2>
               <p className="text-slate-500 mb-8">Fill in the form below and a member of our team will get back to you.</p>
@@ -93,12 +93,12 @@ export default function Contact() {
                   Send Message
                 </button>
                 <p className="text-slate-400 text-xs text-center">
-                  Demo form Ã¢â‚¬â€ submissions are not sent or stored.
+                  Demo form submissions are not sent or stored.
                 </p>
               </div>
             </div>
 
-            {/* Info panel Ã¢â‚¬â€ takes 2 of 5 cols */}
+            {/* Info panel takes 2 of 5 cols */}
             <div className="lg:col-span-2 animate-in animate-in-delay-1">
               <h2 className="text-2xl font-extrabold text-slate-900 mb-6">Contact Details</h2>
 
@@ -192,7 +192,7 @@ export default function Contact() {
               },
               {
                 q: 'Can I mentor or be mentored virtually?',
-                a: 'Absolutely. All our mentorship can take place virtually Ã¢â‚¬â€ online meetings, calls, or messaging Ã¢â‚¬â€ making it accessible for participants across South Africa and even internationally.',
+                a: 'Absolutely. All our mentorship can take place virtually online meetings, calls, or messaging making it accessible for participants across South Africa and even internationally.',
               },
               {
                 q: 'Does my company need to be based in South Africa?',

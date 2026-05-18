@@ -65,7 +65,7 @@ export default function Footer() {
             {/* NPC badge */}
             <div className="mt-6 inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-4 py-2">
               <i className="fa-solid fa-certificate text-amber-400 text-sm"></i>
-              <span className="text-white/70 text-xs font-medium">NPC Ã‚Â· Section 18A PBO Ã‚Â· Est. 2015</span>
+              <span className="text-white/70 text-xs font-medium">NPC  Section 18A PBO  Est. 2015</span>
             </div>
           </div>
 

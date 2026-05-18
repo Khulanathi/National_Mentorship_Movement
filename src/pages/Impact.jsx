@@ -36,7 +36,7 @@ const testimonials = [
     name: 'NMM Mentee', role: 'Small Business Owner', initial: 'N', color: 'bg-orange-500',
   },
   {
-    quote: 'The value of having a mentor goes beyond professional development Ã¢â‚¬â€ it equally encompasses personal development. Having someone who encourages critical thinking has been helpful and has encouraged me to apply a holistic approach.',
+    quote: 'The value of having a mentor goes beyond professional development it equally encompasses personal development. Having someone who encourages critical thinking has been helpful and has encouraged me to apply a holistic approach.',
     name: 'NMM Mentee', role: 'Professional', initial: 'A', color: 'bg-amber-500',
   },
   {
@@ -67,7 +67,7 @@ const partnerQuotes = [
     org: 'EOH',
   },
   {
-    quote: 'The National Mentorship Movement provides the opportunity to harness the exceptional business skills and experience we have in our country to support the development of SMMEs Ã¢â‚¬â€ to create economic growth through entrepreneurialism.',
+    quote: 'The National Mentorship Movement provides the opportunity to harness the exceptional business skills and experience we have in our country to support the development of SMMEs to create economic growth through entrepreneurialism.',
     name: 'Adam Craker',
     role: 'CEO, IQ Business',
     org: 'IQ Business',
@@ -94,7 +94,7 @@ export default function Impact() {
           <span className="inline-block text-red-300 font-semibold text-sm uppercase tracking-widest mb-4">Measuring Success</span>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-5">Our Impact</h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            A decade of real change Ã¢â‚¬â€ in businesses, careers, communities, and lives across South Africa.
+            A decade of real change in businesses, careers, communities, and lives across South Africa.
           </p>
         </div>
       </section>

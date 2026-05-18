@@ -21,9 +21,9 @@ const team = [
 ]
 
 const values = [
-  { icon: 'fa-solid fa-handshake', title: 'Partnership', desc: 'We believe in the power of collaboration Ã¢â‚¬â€ between mentors and mentees, and with our corporate and NGO partners.' },
-  { icon: 'fa-solid fa-globe-africa', title: 'Inclusivity', desc: 'Our mentorship is for all South Africans Ã¢â‚¬â€ across race, gender, sector, and geography.' },
-  { icon: 'fa-solid fa-chart-line', title: 'Impact', desc: 'We measure success by real outcomes Ã¢â‚¬â€ jobs created, businesses grown, confidence gained.' },
+  { icon: 'fa-solid fa-handshake', title: 'Partnership', desc: 'We believe in the power of collaboration between mentors and mentees, and with our corporate and NGO partners.' },
+  { icon: 'fa-solid fa-globe-africa', title: 'Inclusivity', desc: 'Our mentorship is for all South Africans across race, gender, sector, and geography.' },
+  { icon: 'fa-solid fa-chart-line', title: 'Impact', desc: 'We measure success by real outcomes jobs created, businesses grown, confidence gained.' },
   { icon: 'fa-solid fa-shield-halved', title: 'Integrity', desc: 'We operate with transparency and accountability as a registered NPC and Section 18A PBO.' },
 ]
 
@@ -71,7 +71,7 @@ export default function About() {
                 icon: 'fa-solid fa-eye',
                 title: 'Our Vision',
                 color: 'bg-orange-500',
-                content: 'Enabling all South Africans to prosper and grow through mentorship. We envision a society where knowledge and experience flows freely across generations, sectors, and communities Ã¢â‚¬â€ building a stronger, more cohesive nation.',
+                content: 'Enabling all South Africans to prosper and grow through mentorship. We envision a society where knowledge and experience flows freely across generations, sectors, and communities building a stronger, more cohesive nation.',
               },
             ].map(({ icon, title, color, content }) => (
               <div key={title} className="animate-in card p-8">

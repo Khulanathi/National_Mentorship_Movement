@@ -8,7 +8,7 @@ const steps = [
     title: 'Register on the Platform',
     color: 'bg-red-600',
     forMentor: 'Create a detailed profile showcasing your expertise, industry experience, and the areas you can mentor in. Specify your availability and preferred communication style.',
-    forMentee: 'Share your goals, background, and the areas where you need guidance Ã¢â‚¬â€ whether business, career, academics, or personal growth.',
+    forMentee: 'Share your goals, background, and the areas where you need guidance whether business, career, academics, or personal growth.',
   },
   {
     num: '02',
@@ -57,7 +57,7 @@ const platformFeatures = [
   { icon: 'fa-solid fa-arrows-rotate', title: 'Intelligent Matching', desc: 'Algorithmic matching pairs mentors and mentees based on goals, skills, and sector alignment.' },
   { icon: 'fa-solid fa-chart-bar', title: 'Progress Monitoring', desc: 'Track relationship effectiveness and outcomes over a 12-month programme period.' },
   { icon: 'fa-solid fa-calendar', title: 'Meeting Scheduling', desc: 'Built-in scheduling tools for mentors and mentees to easily book and manage sessions.' },
-  { icon: 'fa-solid fa-flag', title: 'Goal Management', desc: 'Record, track, and celebrate goals Ã¢â‚¬â€ keeping both parties accountable and motivated.' },
+  { icon: 'fa-solid fa-flag', title: 'Goal Management', desc: 'Record, track, and celebrate goals keeping both parties accountable and motivated.' },
   { icon: 'fa-solid fa-comments', title: 'In-Platform Chat', desc: 'Secure messaging between mentor and mentee, with document sharing capabilities.' },
   { icon: 'fa-solid fa-book-open', title: 'Learning Resources', desc: 'Access curated content, templates, and guidance materials to enhance every session.' },
   { icon: 'fa-solid fa-people-group', title: 'Community Access', desc: 'Participate in peer communities and group sessions beyond the one-on-one relationship.' },
@@ -78,7 +78,7 @@ export default function HowItWorks() {
           <span className="inline-block text-red-300 font-semibold text-sm uppercase tracking-widest mb-4">The Process</span>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-5">How It Works</h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            A clear, structured process that takes both mentors and mentees from registration to transformation Ã¢â‚¬â€ with support every step of the way.
+            A clear, structured process that takes both mentors and mentees from registration to transformation with support every step of the way.
           </p>
         </div>
       </section>
@@ -164,7 +164,7 @@ export default function HowItWorks() {
             <h2 className="section-heading">Our Platform</h2>
             <p className="section-subheading mx-auto">
               After a worldwide search, we selected the best platform available to power our mentorship programmes
-              Ã¢â‚¬â€ enabling seamless connection, tracking, and growth.
+              enabling seamless connection, tracking, and growth.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">

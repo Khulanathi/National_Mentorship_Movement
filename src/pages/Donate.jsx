@@ -47,7 +47,7 @@ const tiers = [
     features: [
       'Personalised impact dashboard',
       'Logo on NMM website',
-      'Meet the team Ã¢â‚¬â€ virtual briefing',
+      'Meet the team virtual briefing',
       'Priority access to new programmes',
       'Tax deductible (Section 18A)',
     ],
@@ -78,7 +78,7 @@ export default function Donate() {
             <span className="text-amber-400"> Mentorship</span>
           </h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            Your donation helps us connect more mentors with those who need them Ã¢â‚¬â€ transforming businesses, careers, and lives across South Africa.
+            Your donation helps us connect more mentors with those who need them transforming businesses, careers, and lives across South Africa.
           </p>
           <div className="mt-6 inline-flex items-center gap-2 bg-white/10 text-white/80 text-sm px-5 py-2.5 rounded-full border border-white/20">
             <i className="fa-solid fa-certificate text-amber-400"></i>
@@ -115,7 +115,7 @@ export default function Donate() {
             <span className="section-tag">Choose Your Level</span>
             <h2 className="section-heading">Donation Tiers</h2>
             <p className="section-subheading mx-auto">
-              Pick the level that works for you. Every contribution Ã¢â‚¬â€ large or small Ã¢â‚¬â€ makes a meaningful difference.
+              Pick the level that works for you. Every contribution large or small makes a meaningful difference.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -160,7 +160,7 @@ export default function Donate() {
                     <i className="fa-solid fa-heart"></i>
                     Donate {amount}/month
                   </button>
-                  <p className="text-slate-400 text-xs text-center mt-2">Demo Ã¢â‚¬â€ no payment processed</p>
+                  <p className="text-slate-400 text-xs text-center mt-2">Demo no payment processed</p>
                 </div>
               </div>
             ))}

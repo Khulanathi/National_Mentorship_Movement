@@ -4,21 +4,21 @@ import { useScrollAnimation } from '../hooks/useAnimations'
 const thoughtLeaders = [
   {
     name: 'Peter Senge',
-    title: 'MIT Sloan School of Management Ã‚Â· SoL Founder',
+    title: 'MIT Sloan School of Management  SoL Founder',
     desc: 'Senior Lecturer at MIT Sloan and founder of the Society for Organizational Learning (SoL), established at MIT in 1997. Author of "The Fifth Discipline."',
     icon: 'fa-solid fa-atom',
     color: 'bg-red-600',
   },
   {
     name: 'Ben Zander',
-    title: 'Boston Philharmonic Orchestra Ã‚Â· Author & Speaker',
+    title: 'Boston Philharmonic Orchestra  Author & Speaker',
     desc: 'World-renowned conductor, celebrated speaker and author. Founder of the Boston Philharmonic Orchestra, known for transformational leadership philosophies.',
     icon: 'fa-solid fa-music',
     color: 'bg-amber-500',
   },
   {
     name: 'Otto Scharmer',
-    title: 'MIT Sloan Ã‚Â· Theory U',
+    title: 'MIT Sloan  Theory U',
     desc: 'Senior Lecturer at MIT Sloan, deeply influential researcher and practitioner in leadership, organizational learning, and systems change. Creator of Theory U.',
     icon: 'fa-solid fa-circle-nodes',
     color: 'bg-purple-500',
@@ -32,15 +32,15 @@ const thoughtLeaders = [
   },
   {
     name: 'Margaret Wheatley',
-    title: 'Author Ã‚Â· Management Consultant',
+    title: 'Author  Management Consultant',
     desc: 'American writer, teacher, speaker and management consultant who works to create organisations and communities worthy of human habitation.',
     icon: 'fa-solid fa-globe',
     color: 'bg-rose-500',
   },
   {
     name: 'Robert Fritz',
-    title: 'Structural Dynamics Ã‚Â· Author',
-    desc: 'American author, management consultant, composer and filmmaker known for developing structural dynamics Ã¢â‚¬â€ the study of how structural relationships impact behaviour.',
+    title: 'Structural Dynamics  Author',
+    desc: 'American author, management consultant, composer and filmmaker known for developing structural dynamics the study of how structural relationships impact behaviour.',
     icon: 'fa-solid fa-diagram-project',
     color: 'bg-teal-500',
   },
@@ -53,14 +53,14 @@ const thoughtLeaders = [
   },
   {
     name: 'Sonja Blignaut',
-    title: 'Complexity Guide Ã‚Â· Waycraft Creator',
+    title: 'Complexity Guide  Waycraft Creator',
     desc: 'Creator of Waycraft, bridging insight and embodiment to support people navigating inner thresholds, identity transitions, and the terrain of becoming.',
     icon: 'fa-solid fa-compass',
     color: 'bg-orange-500',
   },
   {
     name: 'York Zucchi',
-    title: 'Former Goldman Sachs Ã‚Â· TEDx Presenter',
+    title: 'Former Goldman Sachs  TEDx Presenter',
     desc: 'Swiss-born investor and entrepreneur with 31+ years of experience across many countries. Former Goldman Sachs banker and TEDx presenter.',
     icon: 'fa-solid fa-chart-line',
     color: 'bg-cyan-500',
@@ -74,14 +74,14 @@ const thoughtLeaders = [
   },
   {
     name: 'Art Kleiner',
-    title: 'Writer Ã‚Â· Researcher Ã‚Â· Entrepreneur',
+    title: 'Writer  Researcher  Entrepreneur',
     desc: 'Writer specialising in responsible AI, strategic leadership, and organisational learning. Director of research at Dialogues and faculty at NYU.',
     icon: 'fa-solid fa-pen-nib',
     color: 'bg-violet-500',
   },
   {
     name: 'Magda du Preez',
-    title: 'Psychologist Ã‚Â· Adjunct Professor',
+    title: 'Psychologist  Adjunct Professor',
     desc: 'Psychologist and management consultant with expertise in leadership, team selection and building high-performance cultures. Adjunct professor at Long Island University.',
     icon: 'fa-solid fa-brain',
     color: 'bg-lime-600',
@@ -167,7 +167,7 @@ export default function LearningPractice() {
                       <i className="fa-solid fa-calendar mr-2"></i>Next Session
                     </div>
                     <div className="text-white font-semibold">3rd Thursday of Every Month</div>
-                    <div className="text-slate-400 text-xs mt-1">Online Ã¢â‚¬â€ Open to All</div>
+                    <div className="text-slate-400 text-xs mt-1">Online Open to All</div>
                   </div>
                   <Link to="/contact"
                     className="inline-flex items-center gap-2 bg-red-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-red-700 transition-colors"

@@ -48,7 +48,7 @@ export default function GetInvolved() {
           <span className="inline-block text-red-300 font-semibold text-sm uppercase tracking-widest mb-4">Join the Movement</span>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-5">Get Involved</h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            Whether you&apos;re a seasoned professional ready to give back, someone seeking guidance, or a company looking to create impact Ã¢â‚¬â€ there&apos;s a place for you here.
+            Whether you&apos;re a seasoned professional ready to give back, someone seeking guidance, or a company looking to create impact there&apos;s a place for you here.
           </p>
         </div>
       </section>
@@ -130,7 +130,7 @@ export default function GetInvolved() {
                   <h4 className="font-bold text-red-900 mb-3">Why become a mentor?</h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {[
-                      'Flexible Ã¢â‚¬â€ typically 2 hours/month',
+                      'Flexible typically 2 hours/month',
                       'Virtual or in-person sessions',
                       'Full training & platform access',
                       'Make a meaningful difference',
@@ -179,7 +179,7 @@ export default function GetInvolved() {
                     Submit Mentor Application
                   </button>
                   <p className="text-slate-400 text-xs text-center">
-                    This is a demo form. Submissions do not go anywhere Ã¢â‚¬â€ for demo purposes only.
+                    This is a demo form. Submissions do not go anywhere for demo purposes only.
                   </p>
                 </div>
               </div>
@@ -251,7 +251,7 @@ export default function GetInvolved() {
                     Submit Mentee Application
                   </button>
                   <p className="text-slate-400 text-xs text-center">
-                    This is a demo form. Submissions do not go anywhere Ã¢â‚¬â€ for demo purposes only.
+                    This is a demo form. Submissions do not go anywhere for demo purposes only.
                   </p>
                 </div>
               </div>
@@ -299,7 +299,7 @@ export default function GetInvolved() {
                   <FormSelect
                     label="Type of Programme Interested In"
                     id="corp-type"
-                    options={['Staff Volunteer Mentorship', 'CSI / Community Mentorship', 'Internal Employee Development', 'Entrepreneur Support', 'Student Mentorship', 'Not Sure Ã¢â‚¬â€ Need Guidance']}
+                    options={['Staff Volunteer Mentorship', 'CSI / Community Mentorship', 'Internal Employee Development', 'Entrepreneur Support', 'Student Mentorship', 'Not Sure Need Guidance']}
                   />
                   <FormInput label="Approximate Number of Participants" id="corp-size" placeholder="e.g. 50, 200, 500+" />
                   <div>
@@ -318,7 +318,7 @@ export default function GetInvolved() {
                     Submit Partnership Enquiry
                   </button>
                   <p className="text-slate-400 text-xs text-center">
-                    This is a demo form. Submissions do not go anywhere Ã¢â‚¬â€ for demo purposes only.
+                    This is a demo form. Submissions do not go anywhere for demo purposes only.
                   </p>
                 </div>
               </div>
