@@ -8,7 +8,7 @@ const steps = [
     title: 'Register on the Platform',
     color: 'bg-red-600',
     forMentor: 'Create a detailed profile showcasing your expertise, industry experience, and the areas you can mentor in. Specify your availability and preferred communication style.',
-    forMentee: 'Share your goals, background, and the areas where you need guidance whether business, career, academics, or personal growth.',
+    forMentee: 'Share your goals, background, and the areas where you need guidance  whether business, career, academics, or personal growth.',
   },
   {
     num: '02',
@@ -57,7 +57,7 @@ const platformFeatures = [
   { icon: 'fa-solid fa-arrows-rotate', title: 'Intelligent Matching', desc: 'Algorithmic matching pairs mentors and mentees based on goals, skills, and sector alignment.' },
   { icon: 'fa-solid fa-chart-bar', title: 'Progress Monitoring', desc: 'Track relationship effectiveness and outcomes over a 12-month programme period.' },
   { icon: 'fa-solid fa-calendar', title: 'Meeting Scheduling', desc: 'Built-in scheduling tools for mentors and mentees to easily book and manage sessions.' },
-  { icon: 'fa-solid fa-flag', title: 'Goal Management', desc: 'Record, track, and celebrate goals keeping both parties accountable and motivated.' },
+  { icon: 'fa-solid fa-flag', title: 'Goal Management', desc: 'Record, track, and celebrate goals  keeping both parties accountable and motivated.' },
   { icon: 'fa-solid fa-comments', title: 'In-Platform Chat', desc: 'Secure messaging between mentor and mentee, with document sharing capabilities.' },
   { icon: 'fa-solid fa-book-open', title: 'Learning Resources', desc: 'Access curated content, templates, and guidance materials to enhance every session.' },
   { icon: 'fa-solid fa-people-group', title: 'Community Access', desc: 'Participate in peer communities and group sessions beyond the one-on-one relationship.' },
@@ -69,17 +69,29 @@ export default function HowItWorks() {
   return (
     <div>
       {/* Hero */}
-      <section className="page-hero">
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }}
+      <section className="page-hero py-20" style={{ background: 'linear-gradient(to bottom, #120304 0%, #2D0A10 55%, #1A0507 100%)' }}>
+        {/* Horizontal lines pattern */}
+        <div className="absolute inset-0 opacity-[0.04]"
+          style={{ backgroundImage: 'repeating-linear-gradient(0deg, #fff 0px, #fff 1px, transparent 1px, transparent 28px)' }}
         />
+        {/* Decorative icon */}
+        <i className="fa-solid fa-route absolute -bottom-8 -right-8 text-white/[0.04] pointer-events-none select-none" style={{ fontSize: '20rem', lineHeight: 1 }}></i>
+        {/* Right accent bar */}
+        <div className="absolute right-0 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-orange-500/70 to-transparent"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block text-red-300 font-semibold text-sm uppercase tracking-widest mb-4">The Process</span>
+          <span className="inline-block text-orange-400 font-semibold text-sm uppercase tracking-widest mb-4">The Process</span>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-5">How It Works</h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            A clear, structured process that takes both mentors and mentees from registration to transformation with support every step of the way.
+            A clear, structured process that takes both mentors and mentees from registration to transformation — with support every step of the way.
           </p>
+          <div className="flex flex-wrap justify-center gap-4 mt-8">
+            {[{n:'01',l:'Register'},{n:'02',l:'Onboard'},{n:'03',l:'Match'},{n:'04',l:'Meet'},{n:'05',l:'Goals'},{n:'06',l:'Graduate'}].map(({n,l})=>(
+              <div key={n} className="flex items-center gap-1.5 bg-white/10 border border-white/15 rounded-full px-3 py-1.5">
+                <span className="text-orange-400 font-black text-xs">{n}</span>
+                <span className="text-white/70 text-xs font-medium">{l}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -164,7 +176,7 @@ export default function HowItWorks() {
             <h2 className="section-heading">Our Platform</h2>
             <p className="section-subheading mx-auto">
               After a worldwide search, we selected the best platform available to power our mentorship programmes
-              enabling seamless connection, tracking, and growth.
+               enabling seamless connection, tracking, and growth.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">

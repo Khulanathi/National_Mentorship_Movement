@@ -20,7 +20,7 @@ const allPrograms = [
     status: 'Active',
     icon: 'fa-solid fa-building-columns',
     color: 'bg-orange-500',
-    desc: 'NMM mobilises, trains and matches Nedbank staff volunteers to Nedbank-supported NGOs and their beneficiaries driving meaningful community impact through staff engagement.',
+    desc: 'NMM mobilises, trains and matches Nedbank staff volunteers to Nedbank-supported NGOs and their beneficiaries  driving meaningful community impact through staff engagement.',
     tags: ['Staff Volunteers', 'NGO Beneficiaries', 'CSI Programme'],
   },
   {
@@ -90,7 +90,7 @@ const allPrograms = [
     status: 'Previous',
     icon: 'fa-solid fa-landmark',
     color: 'bg-indigo-500',
-    desc: 'In partnership with ULP interactive forums and group and one-on-one mentorship to develop a strong community of confident, financially literate and ethical leaders.',
+    desc: 'In partnership with ULP  interactive forums and group and one-on-one mentorship to develop a strong community of confident, financially literate and ethical leaders.',
     tags: ['Leadership Development', 'Financial Literacy', 'Ethics'],
   },
   {
@@ -140,12 +140,17 @@ export default function Programs() {
   return (
     <div>
       {/* Hero */}
-      <section className="page-hero">
-        <div className="absolute inset-0 opacity-[0.04]"
-          style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }}
-        />
+      <section className="page-hero" style={{ background: 'linear-gradient(150deg, #2D0A10 0%, #1A0507 50%, #1C0508 100%)' }}>
+        {/* Grid cross-hatch pattern */}
+        <div className="absolute inset-0 opacity-[0.04]" style={{
+          backgroundImage: 'repeating-linear-gradient(0deg, #fff 0px, #fff 1px, transparent 1px, transparent 32px), repeating-linear-gradient(90deg, #fff 0px, #fff 1px, transparent 1px, transparent 32px)'
+        }} />
+        {/* Decorative icon */}
+        <i className="fa-solid fa-briefcase absolute -bottom-6 -left-6 text-white/[0.04] pointer-events-none select-none" style={{ fontSize: '20rem', lineHeight: 1 }}></i>
+        {/* Top accent bar */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber-500/70 to-transparent"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block text-red-300 font-semibold text-sm uppercase tracking-widest mb-4">Our Work</span>
+          <span className="inline-block text-amber-400 font-semibold text-sm uppercase tracking-widest mb-4">Our Work</span>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-5">Programmes</h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
             We work with leading organisations across South Africa to design and deliver tailored mentorship
@@ -173,7 +178,7 @@ export default function Programs() {
             <span className="section-tag">How We Partner</span>
             <h2 className="section-heading">Our Partnership Model</h2>
             <p className="section-subheading mx-auto">
-              Our model is inherently one of collaboration we design bespoke programmes with partners across the public, private, and NGO sectors.
+              Our model is inherently one of collaboration  we design bespoke programmes with partners across the public, private, and NGO sectors.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -273,7 +278,7 @@ export default function Programs() {
               <h2 className="section-heading mb-5">Entrepreneurship Centre</h2>
               <p className="text-slate-600 leading-relaxed mb-5">
                 The NMM Entrepreneurship Centre is dedicated to supporting South African entrepreneurs
-                at every stage of their journey from idea to launch, and from survival to scale.
+                at every stage of their journey  from idea to launch, and from survival to scale.
               </p>
               <p className="text-slate-600 leading-relaxed mb-8">
                 Through structured mentorship programmes, access to experienced business mentors, and

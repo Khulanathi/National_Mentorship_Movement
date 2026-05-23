@@ -40,7 +40,7 @@ const thoughtLeaders = [
   {
     name: 'Robert Fritz',
     title: 'Structural Dynamics  Author',
-    desc: 'American author, management consultant, composer and filmmaker known for developing structural dynamics the study of how structural relationships impact behaviour.',
+    desc: 'American author, management consultant, composer and filmmaker known for developing structural dynamics  the study of how structural relationships impact behaviour.',
     icon: 'fa-solid fa-diagram-project',
     color: 'bg-teal-500',
   },
@@ -94,12 +94,18 @@ export default function LearningPractice() {
   return (
     <div>
       {/* Hero */}
-      <section className="page-hero">
+      <section className="page-hero" style={{ background: 'linear-gradient(-135deg, #1A0507 0%, #2D1015 55%, #1A0507 100%)' }}>
+        {/* Reverse-diagonal stripe pattern */}
         <div className="absolute inset-0 opacity-[0.04]"
-          style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }}
+          style={{ backgroundImage: 'repeating-linear-gradient(-45deg, #fff 0px, #fff 1px, transparent 1px, transparent 14px)' }}
         />
+        {/* Decorative icon */}
+        <i className="fa-solid fa-book-open absolute -bottom-8 -right-8 text-white/[0.04] pointer-events-none select-none" style={{ fontSize: '20rem', lineHeight: 1 }}></i>
+        {/* Left + right accent bars */}
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-purple-500/60 to-transparent"></div>
+        <div className="absolute right-0 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-purple-500/60 to-transparent"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block text-red-300 font-semibold text-sm uppercase tracking-widest mb-4">Knowledge & Growth</span>
+          <span className="inline-block text-purple-300 font-semibold text-sm uppercase tracking-widest mb-4">Knowledge &amp; Growth</span>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-5">Virtual Learning Practice</h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
             In collaboration with the Global Society for Organisational Learning (SoL), we connect communities with world-renowned thought leaders every month.
@@ -167,7 +173,7 @@ export default function LearningPractice() {
                       <i className="fa-solid fa-calendar mr-2"></i>Next Session
                     </div>
                     <div className="text-white font-semibold">3rd Thursday of Every Month</div>
-                    <div className="text-slate-400 text-xs mt-1">Online Open to All</div>
+                    <div className="text-slate-400 text-xs mt-1">Online  Open to All</div>
                   </div>
                   <Link to="/contact"
                     className="inline-flex items-center gap-2 bg-red-600 text-white font-semibold px-6 py-3 rounded-xl hover:bg-red-700 transition-colors"

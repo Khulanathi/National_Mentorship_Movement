@@ -47,7 +47,7 @@ const tiers = [
     features: [
       'Personalised impact dashboard',
       'Logo on NMM website',
-      'Meet the team virtual briefing',
+      'Meet the team  virtual briefing',
       'Priority access to new programmes',
       'Tax deductible (Section 18A)',
     ],
@@ -67,18 +67,23 @@ export default function Donate() {
   return (
     <div>
       {/* Hero */}
-      <section className="page-hero">
-        <div className="absolute inset-0 opacity-[0.04]"
-          style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }}
+      <section className="page-hero" style={{ background: 'linear-gradient(135deg, #2D0A10 0%, #1A0507 40%, #4A0A18 100%)' }}>
+        {/* Large spaced dots */}
+        <div className="absolute inset-0 opacity-[0.05]"
+          style={{ backgroundImage: 'radial-gradient(circle, #fff 2px, transparent 2px)', backgroundSize: '50px 50px' }}
         />
+        {/* Faded heart in background */}
+        <i className="fa-solid fa-heart absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white/[0.04] pointer-events-none select-none" style={{ fontSize: '28rem', lineHeight: 1 }}></i>
+        {/* Top accent */}
+        <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-amber-500/70 to-transparent"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block text-red-300 font-semibold text-sm uppercase tracking-widest mb-4">Support Our Work</span>
+          <span className="inline-block text-amber-400 font-semibold text-sm uppercase tracking-widest mb-4">Support Our Work</span>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-5">
             Give the Gift of
             <span className="text-amber-400"> Mentorship</span>
           </h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            Your donation helps us connect more mentors with those who need them transforming businesses, careers, and lives across South Africa.
+            Your donation helps us connect more mentors with those who need them &mdash; transforming businesses, careers, and lives across South Africa.
           </p>
           <div className="mt-6 inline-flex items-center gap-2 bg-white/10 text-white/80 text-sm px-5 py-2.5 rounded-full border border-white/20">
             <i className="fa-solid fa-certificate text-amber-400"></i>
@@ -115,7 +120,7 @@ export default function Donate() {
             <span className="section-tag">Choose Your Level</span>
             <h2 className="section-heading">Donation Tiers</h2>
             <p className="section-subheading mx-auto">
-              Pick the level that works for you. Every contribution large or small makes a meaningful difference.
+              Pick the level that works for you. Every contribution  large or small  makes a meaningful difference.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -160,7 +165,7 @@ export default function Donate() {
                     <i className="fa-solid fa-heart"></i>
                     Donate {amount}/month
                   </button>
-                  <p className="text-slate-400 text-xs text-center mt-2">Demo no payment processed</p>
+                  <p className="text-slate-400 text-xs text-center mt-2">Demo  no payment processed</p>
                 </div>
               </div>
             ))}

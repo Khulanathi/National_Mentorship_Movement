@@ -67,6 +67,11 @@ export default function Footer() {
               <i className="fa-solid fa-certificate text-amber-400 text-sm"></i>
               <span className="text-white/70 text-xs font-medium">NPC  Section 18A PBO  Est. 2015</span>
             </div>
+            {/* SA Flag badge */}
+            <div className="mt-3 inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-4 py-2">
+              <img src="https://flagcdn.com/w20/za.png" alt="South Africa" className="h-3.5 w-auto rounded-sm" />
+              <span className="text-white/70 text-xs font-medium">Proudly South African</span>
+            </div>
           </div>
 
           {/* Links */}

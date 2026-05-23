@@ -21,9 +21,9 @@ const team = [
 ]
 
 const values = [
-  { icon: 'fa-solid fa-handshake', title: 'Partnership', desc: 'We believe in the power of collaboration between mentors and mentees, and with our corporate and NGO partners.' },
-  { icon: 'fa-solid fa-globe-africa', title: 'Inclusivity', desc: 'Our mentorship is for all South Africans across race, gender, sector, and geography.' },
-  { icon: 'fa-solid fa-chart-line', title: 'Impact', desc: 'We measure success by real outcomes jobs created, businesses grown, confidence gained.' },
+  { icon: 'fa-solid fa-handshake', title: 'Partnership', desc: 'We believe in the power of collaboration  between mentors and mentees, and with our corporate and NGO partners.' },
+  { icon: 'fa-solid fa-globe-africa', title: 'Inclusivity', desc: 'Our mentorship is for all South Africans  across race, gender, sector, and geography.' },
+  { icon: 'fa-solid fa-chart-line', title: 'Impact', desc: 'We measure success by real outcomes  jobs created, businesses grown, confidence gained.' },
   { icon: 'fa-solid fa-shield-halved', title: 'Integrity', desc: 'We operate with transparency and accountability as a registered NPC and Section 18A PBO.' },
 ]
 
@@ -33,13 +33,17 @@ export default function About() {
   return (
     <div>
       {/* Hero */}
-      <section className="page-hero">
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }}
+      <section className="page-hero" style={{ background: 'linear-gradient(160deg, #1A0507 0%, #3D0C14 55%, #2D0A10 100%)' }}>
+        {/* Diagonal stripe pattern */}
+        <div className="absolute inset-0 opacity-[0.04]"
+          style={{ backgroundImage: 'repeating-linear-gradient(45deg, #fff 0px, #fff 1px, transparent 1px, transparent 14px)' }}
         />
+        {/* Decorative background icon */}
+        <i className="fa-solid fa-globe-africa absolute -bottom-10 -right-10 text-white/[0.04] pointer-events-none select-none" style={{ fontSize: '22rem', lineHeight: 1 }}></i>
+        {/* Left accent bar */}
+        <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-transparent via-amber-500/70 to-transparent"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block text-red-300 font-semibold text-sm uppercase tracking-widest mb-4">About Us</span>
+          <span className="inline-block text-amber-400 font-semibold text-sm uppercase tracking-widest mb-4">About Us</span>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-5">
             Who We Are
           </h1>
@@ -52,6 +56,10 @@ export default function About() {
                 {badge}
               </span>
             ))}
+            <span className="bg-white/10 border border-white/20 text-white/80 text-sm font-medium px-4 py-1.5 rounded-full inline-flex items-center gap-2">
+              <img src="https://flagcdn.com/w20/za.png" alt="SA" className="h-3.5 w-auto rounded-sm" />
+              Proudly South African
+            </span>
           </div>
         </div>
       </section>
@@ -71,7 +79,7 @@ export default function About() {
                 icon: 'fa-solid fa-eye',
                 title: 'Our Vision',
                 color: 'bg-orange-500',
-                content: 'Enabling all South Africans to prosper and grow through mentorship. We envision a society where knowledge and experience flows freely across generations, sectors, and communities building a stronger, more cohesive nation.',
+                content: 'Enabling all South Africans to prosper and grow through mentorship. We envision a society where knowledge and experience flows freely across generations, sectors, and communities  building a stronger, more cohesive nation.',
               },
             ].map(({ icon, title, color, content }) => (
               <div key={title} className="animate-in card p-8">
@@ -92,7 +100,7 @@ export default function About() {
             <p className="text-2xl md:text-3xl font-bold text-white leading-relaxed max-w-3xl mx-auto mb-6">
               &ldquo;Mentorship is a partnership and relationship between two (or more) people to achieve mutually agreed goals through the reciprocal sharing of knowledge, experience and wisdom.&rdquo;
             </p>
-            <span className="text-amber-400 font-semibold">Ã¢â‚¬â€ NMM Definition of Mentorship</span>
+            <span className="text-amber-400 font-semibold"> NMM Definition of Mentorship</span>
           </div>
 
           {/* Values */}

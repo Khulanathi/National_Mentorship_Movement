@@ -40,16 +40,37 @@ export default function GetInvolved() {
   return (
     <div>
       {/* Hero */}
-      <section className="page-hero">
-        <div className="absolute inset-0 opacity-[0.04]"
-          style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }}
-        />
+      <section className="page-hero" style={{ background: 'linear-gradient(145deg, #120304 0%, #2D0A10 45%, #3D1520 100%)' }}>
+        {/* Chevron/arrow pattern */}
+        <div className="absolute inset-0 opacity-[0.04]" style={{
+          backgroundImage: 'repeating-linear-gradient(60deg, #fff 0px, #fff 1px, transparent 1px, transparent 20px), repeating-linear-gradient(-60deg, #fff 0px, #fff 1px, transparent 1px, transparent 20px)'
+        }} />
+        {/* Three role icons in background */}
+        <div className="absolute inset-0 flex items-center justify-center gap-32 pointer-events-none select-none overflow-hidden opacity-[0.04]">
+          <i className="fa-solid fa-user-tie text-white" style={{ fontSize: '12rem' }}></i>
+          <i className="fa-solid fa-handshake text-white" style={{ fontSize: '10rem' }}></i>
+          <i className="fa-solid fa-building text-white" style={{ fontSize: '12rem' }}></i>
+        </div>
+        {/* Bottom accent */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-red-600/0 via-red-500/80 to-red-600/0"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <span className="inline-block text-red-300 font-semibold text-sm uppercase tracking-widest mb-4">Join the Movement</span>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-5">Get Involved</h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            Whether you&apos;re a seasoned professional ready to give back, someone seeking guidance, or a company looking to create impact there&apos;s a place for you here.
+            Whether you&apos;re a seasoned professional ready to give back, someone seeking guidance, or a company looking to create impact &mdash; there&apos;s a place for you here.
           </p>
+          <div className="flex flex-wrap justify-center gap-4 mt-8">
+            {[
+              { icon: 'fa-solid fa-user-tie', label: 'Mentor', color: 'text-red-400' },
+              { icon: 'fa-solid fa-seedling', label: 'Mentee', color: 'text-orange-400' },
+              { icon: 'fa-solid fa-building', label: 'Corporate', color: 'text-amber-400' },
+            ].map(({ icon, label, color }) => (
+              <div key={label} className="flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-5 py-2">
+                <i className={`${icon} ${color} text-sm`}></i>
+                <span className="text-white/80 text-sm font-semibold">{label}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -130,7 +151,7 @@ export default function GetInvolved() {
                   <h4 className="font-bold text-red-900 mb-3">Why become a mentor?</h4>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                     {[
-                      'Flexible typically 2 hours/month',
+                      'Flexible  typically 2 hours/month',
                       'Virtual or in-person sessions',
                       'Full training & platform access',
                       'Make a meaningful difference',
@@ -179,7 +200,7 @@ export default function GetInvolved() {
                     Submit Mentor Application
                   </button>
                   <p className="text-slate-400 text-xs text-center">
-                    This is a demo form. Submissions do not go anywhere for demo purposes only.
+                    This is a demo form. Submissions do not go anywhere  for demo purposes only.
                   </p>
                 </div>
               </div>
@@ -251,7 +272,7 @@ export default function GetInvolved() {
                     Submit Mentee Application
                   </button>
                   <p className="text-slate-400 text-xs text-center">
-                    This is a demo form. Submissions do not go anywhere for demo purposes only.
+                    This is a demo form. Submissions do not go anywhere  for demo purposes only.
                   </p>
                 </div>
               </div>
@@ -299,7 +320,7 @@ export default function GetInvolved() {
                   <FormSelect
                     label="Type of Programme Interested In"
                     id="corp-type"
-                    options={['Staff Volunteer Mentorship', 'CSI / Community Mentorship', 'Internal Employee Development', 'Entrepreneur Support', 'Student Mentorship', 'Not Sure Need Guidance']}
+                    options={['Staff Volunteer Mentorship', 'CSI / Community Mentorship', 'Internal Employee Development', 'Entrepreneur Support', 'Student Mentorship', 'Not Sure  Need Guidance']}
                   />
                   <FormInput label="Approximate Number of Participants" id="corp-size" placeholder="e.g. 50, 200, 500+" />
                   <div>
@@ -318,7 +339,7 @@ export default function GetInvolved() {
                     Submit Partnership Enquiry
                   </button>
                   <p className="text-slate-400 text-xs text-center">
-                    This is a demo form. Submissions do not go anywhere for demo purposes only.
+                    This is a demo form. Submissions do not go anywhere  for demo purposes only.
                   </p>
                 </div>
               </div>

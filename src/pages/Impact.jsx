@@ -36,7 +36,7 @@ const testimonials = [
     name: 'NMM Mentee', role: 'Small Business Owner', initial: 'N', color: 'bg-orange-500',
   },
   {
-    quote: 'The value of having a mentor goes beyond professional development it equally encompasses personal development. Having someone who encourages critical thinking has been helpful and has encouraged me to apply a holistic approach.',
+    quote: 'The value of having a mentor goes beyond professional development  it equally encompasses personal development. Having someone who encourages critical thinking has been helpful and has encouraged me to apply a holistic approach.',
     name: 'NMM Mentee', role: 'Professional', initial: 'A', color: 'bg-amber-500',
   },
   {
@@ -67,7 +67,7 @@ const partnerQuotes = [
     org: 'EOH',
   },
   {
-    quote: 'The National Mentorship Movement provides the opportunity to harness the exceptional business skills and experience we have in our country to support the development of SMMEs to create economic growth through entrepreneurialism.',
+    quote: 'The National Mentorship Movement provides the opportunity to harness the exceptional business skills and experience we have in our country to support the development of SMMEs  to create economic growth through entrepreneurialism.',
     name: 'Adam Craker',
     role: 'CEO, IQ Business',
     org: 'IQ Business',
@@ -86,16 +86,36 @@ export default function Impact() {
   return (
     <div>
       {/* Hero */}
-      <section className="page-hero">
-        <div className="absolute inset-0 opacity-[0.04]"
-          style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }}
+      <section className="page-hero" style={{ background: 'linear-gradient(135deg, #3D0C14 0%, #1A0507 45%, #4A0A18 100%)' }}>
+        {/* Larger dots pattern */}
+        <div className="absolute inset-0 opacity-[0.05]"
+          style={{ backgroundImage: 'radial-gradient(circle, #fff 1.5px, transparent 1.5px)', backgroundSize: '44px 44px' }}
         />
+        {/* Faded stat number in background */}
+        <div className="absolute inset-0 flex items-center justify-end pr-12 pointer-events-none select-none overflow-hidden">
+          <span className="text-white/[0.04] font-black" style={{ fontSize: '18rem', lineHeight: 1 }}>7,958</span>
+        </div>
+        {/* Bottom accent bar */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-orange-500/70 to-transparent"></div>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block text-red-300 font-semibold text-sm uppercase tracking-widest mb-4">Measuring Success</span>
+          <span className="inline-block text-orange-400 font-semibold text-sm uppercase tracking-widest mb-4">Measuring Success</span>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-5">Our Impact</h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
-            A decade of real change in businesses, careers, communities, and lives across South Africa.
+            A decade of real change — in businesses, careers, communities, and lives across South Africa.
           </p>
+          <div className="flex flex-wrap justify-center gap-4 mt-8">
+            {[
+              { val: '7,958+', label: 'Lives Impacted' },
+              { val: '1,862', label: 'Active Mentors' },
+              { val: '10', label: 'Years' },
+              { val: '20+', label: 'Partners' },
+            ].map(({ val, label }) => (
+              <div key={label} className="text-center bg-white/10 border border-white/15 rounded-2xl px-5 py-3">
+                <div className="text-amber-400 font-black text-xl">{val}</div>
+                <div className="text-white/60 text-xs font-medium">{label}</div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

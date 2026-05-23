@@ -6,12 +6,15 @@ export default function Contact() {
   return (
     <div>
       {/* Hero */}
-      <section className="page-hero">
-        <div className="absolute inset-0 opacity-[0.04]"
-          style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '30px 30px' }}
+      <section className="page-hero py-20" style={{ background: 'linear-gradient(180deg, #1A0507 0%, #200608 100%)' }}>
+        {/* Minimal clean pattern */}
+        <div className="absolute inset-0 opacity-[0.03]"
+          style={{ backgroundImage: 'radial-gradient(circle, #fff 1px, transparent 1px)', backgroundSize: '40px 40px' }}
         />
+        {/* Decorative icon */}
+        <i className="fa-solid fa-envelope-open-text absolute -bottom-8 -right-8 text-white/[0.04] pointer-events-none select-none" style={{ fontSize: '18rem', lineHeight: 1 }}></i>
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="inline-block text-red-300 font-semibold text-sm uppercase tracking-widest mb-4">Reach Out</span>
+          <span className="inline-block text-slate-300 font-semibold text-sm uppercase tracking-widest mb-4">Reach Out</span>
           <h1 className="text-4xl md:text-6xl font-black text-white mb-5">Get in Touch</h1>
           <p className="text-lg text-slate-300 max-w-2xl mx-auto">
             Have questions about our programmes, partnership opportunities, or how to get involved?
@@ -24,7 +27,7 @@ export default function Contact() {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-            {/* Form takes 3 of 5 cols */}
+            {/* Form  takes 3 of 5 cols */}
             <div className="lg:col-span-3 animate-in">
               <h2 className="text-2xl font-extrabold text-slate-900 mb-2">Send us a Message</h2>
               <p className="text-slate-500 mb-8">Fill in the form below and a member of our team will get back to you.</p>
@@ -93,12 +96,12 @@ export default function Contact() {
                   Send Message
                 </button>
                 <p className="text-slate-400 text-xs text-center">
-                  Demo form submissions are not sent or stored.
+                  Demo form  submissions are not sent or stored.
                 </p>
               </div>
             </div>
 
-            {/* Info panel takes 2 of 5 cols */}
+            {/* Info panel  takes 2 of 5 cols */}
             <div className="lg:col-span-2 animate-in animate-in-delay-1">
               <h2 className="text-2xl font-extrabold text-slate-900 mb-6">Contact Details</h2>
 
@@ -192,7 +195,7 @@ export default function Contact() {
               },
               {
                 q: 'Can I mentor or be mentored virtually?',
-                a: 'Absolutely. All our mentorship can take place virtually online meetings, calls, or messaging making it accessible for participants across South Africa and even internationally.',
+                a: 'Absolutely. All our mentorship can take place virtually  online meetings, calls, or messaging  making it accessible for participants across South Africa and even internationally.',
               },
               {
                 q: 'Does my company need to be based in South Africa?',
