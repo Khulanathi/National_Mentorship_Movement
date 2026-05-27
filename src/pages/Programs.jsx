@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useScrollAnimation } from '../hooks/useAnimations'
+import ImageSlider from '../components/ImageSlider'
 
 const allPrograms = [
   {
@@ -167,6 +168,42 @@ export default function Programs() {
                 {text}
               </span>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Programmes slider */}
+      <section className="py-16 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div className="animate-in">
+              <span className="section-tag">Our Programmes in Action</span>
+              <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">
+                Real Events, Real Impact
+              </h2>
+              <p className="text-slate-600 leading-relaxed mb-6">
+                From university campuses in Mpumalanga to innovation forums in the Northern Cape —
+                NMM programmes run across South Africa, delivering world-class mentorship where it’s needed most.
+              </p>
+              <div className="flex flex-wrap gap-3">
+                {['University Campus', 'Corporate Events', 'Innovation Forums', 'Community Workshops'].map((tag) => (
+                  <span key={tag} className="text-xs font-semibold bg-red-50 text-red-600 border border-red-100 px-3 py-1.5 rounded-full">{tag}</span>
+                ))}
+              </div>
+            </div>
+            <ImageSlider
+              images={[
+                { src: '/images/nmm-01.png', caption: 'University of Mpumalanga mentorship event' },
+                { src: '/images/nmm-03.png', caption: 'Northern Cape Innovation Forum panel' },
+                { src: '/images/nmm-25.png', caption: 'Corporate volunteer programme launch' },
+                { src: '/images/nmm-26.png', caption: 'Group mentorship session' },
+                { src: '/images/nmm-27.png', caption: 'NMM graduation ceremony' },
+                { src: '/images/nmm-28.png', caption: 'Community outreach event' },
+              ]}
+              height="h-[340px]"
+              interval={3800}
+              className="animate-in animate-in-delay-1 shadow-xl"
+            />
           </div>
         </div>
       </section>

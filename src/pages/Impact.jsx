@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useCountUp, useScrollAnimation } from '../hooks/useAnimations'
+import { MasonryGallery } from '../components/PhotoComponents'
 
 function ImpactStat({ value, suffix = '', label, icon, color, desc }) {
   const { count, ref } = useCountUp(value, 2500)
@@ -247,6 +248,36 @@ export default function Impact() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Photo Gallery */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-10 animate-in">
+            <span className="section-tag">Gallery</span>
+            <h2 className="section-heading">The Movement in Pictures</h2>
+            <p className="section-subheading mx-auto">
+              Real moments from our programmes, events, and communities across South Africa.
+            </p>
+          </div>
+          <MasonryGallery
+            images={[
+              { src: '/images/nmm-05.png', caption: 'University of Mpumalanga launch event' },
+              { src: '/images/nmm-06.png', caption: 'NMM at a national conference' },
+              { src: '/images/nmm-07.png', caption: 'Group mentorship session' },
+              { src: '/images/nmm-08.png', caption: 'Mentor panel discussion' },
+              { src: '/images/nmm-09.png', caption: 'Power of Two stage event' },
+              { src: '/images/nmm-10.png', caption: 'NMM community workshop' },
+              { src: '/images/nmm-11.png', caption: 'Graduating class celebration' },
+              { src: '/images/nmm-12.png', caption: 'NMM banner at expo' },
+              { src: '/images/nmm-13.png', caption: 'Entrepreneur coaching session' },
+              { src: '/images/nmm-14.png', caption: 'Students and mentors on stage' },
+              { src: '/images/nmm-15.png', caption: 'Interview at NMM stand' },
+              { src: '/images/nmm-16.png', caption: 'Partnership showcase' },
+            ]}
+            className="animate-in"
+          />
         </div>
       </section>
 

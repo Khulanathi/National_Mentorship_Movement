@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useScrollAnimation } from '../hooks/useAnimations'
+import { PhotoStrip, FullBleedImage } from '../components/PhotoComponents'
 
 function FormInput({ label, type = 'text', placeholder, id }) {
   return (
@@ -71,6 +72,23 @@ export default function GetInvolved() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Photo strip */}
+      <section className="py-10 bg-slate-50 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-slate-500 text-sm font-semibold uppercase tracking-widest mb-4">Mentors &amp; Mentees already making a difference</p>
+          <PhotoStrip images={[
+            { src: '/images/nmm-02.png', caption: 'NMM mentor at an expo' },
+            { src: '/images/nmm-06.png', caption: 'Group mentorship in action' },
+            { src: '/images/nmm-11.png', caption: 'NMM community workshop' },
+            { src: '/images/nmm-14.png', caption: 'Students on stage' },
+            { src: '/images/nmm-18.png', caption: 'Mentor celebration event' },
+            { src: '/images/nmm-22.png', caption: 'University partnership day' },
+            { src: '/images/nmm-29.png', caption: 'Volunteer programme launch' },
+            { src: '/images/nmm-30.png', caption: 'Corporate partners showcase' },
+          ]} />
         </div>
       </section>
 

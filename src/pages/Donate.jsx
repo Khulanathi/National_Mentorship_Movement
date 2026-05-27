@@ -1,5 +1,6 @@
 import { useScrollAnimation } from '../hooks/useAnimations'
 import { Link } from 'react-router-dom'
+import { FullBleedImage, PhotoStrip } from '../components/PhotoComponents'
 
 const tiers = [
   {
@@ -235,12 +236,31 @@ export default function Donate() {
         </div>
       </section>
 
-      {/* Corporate giving CTA */}
-      <section className="py-20" style={{ background: 'linear-gradient(135deg, #1A0507, #3D0C14)' }}>
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <i className="fa-solid fa-building text-red-400 text-4xl mb-5 block"></i>
+      {/* Photo strip — real moments */}
+      <section className="py-10 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-slate-500 text-sm font-semibold uppercase tracking-widest mb-4">Lives changed by your generosity</p>
+          <PhotoStrip images={[
+            { src: '/images/nmm-05.png', caption: 'University mentorship launch' },
+            { src: '/images/nmm-08.png', caption: 'Mentor panel event' },
+            { src: '/images/nmm-15.png', caption: 'Community workshop' },
+            { src: '/images/nmm-20.png', caption: 'Annual graduation' },
+            { src: '/images/nmm-24.png', caption: 'Corporate partnership night' },
+            { src: '/images/nmm-27.png', caption: 'Innovation forum' },
+          ]} />
+        </div>
+      </section>
+
+      {/* Corporate giving CTA — full bleed */}
+      <FullBleedImage
+        src="/images/nmm-09.png"
+        overlayClass="bg-gradient-to-b from-black/75 via-black/65 to-black/80"
+        minHeight="min-h-[380px]"
+      >
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center py-16">
+          <i className="fa-solid fa-building text-amber-400 text-4xl mb-5 block"></i>
           <h2 className="text-3xl font-extrabold text-white mb-4">Corporate Giving</h2>
-          <p className="text-slate-300 text-lg mb-8">
+          <p className="text-slate-200 text-lg mb-8">
             Looking to make a larger impact through a corporate donation or sponsorship? We&apos;d love to work with you to design a contribution that aligns with your CSI strategy.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
@@ -254,7 +274,7 @@ export default function Donate() {
             </Link>
           </div>
         </div>
-      </section>
+      </FullBleedImage>
     </div>
   )
 }

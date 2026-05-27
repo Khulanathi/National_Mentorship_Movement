@@ -1,6 +1,31 @@
 import { useEffect, useState, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { useCountUp, useScrollAnimation } from '../hooks/useAnimations'
+import ImageSlider from '../components/ImageSlider'
+import { PhotoStrip } from '../components/PhotoComponents'
+
+// All NMM gallery images
+const IMGS = Array.from({ length: 30 }, (_, i) => ({ src: `/images/nmm-${String(i + 1).padStart(2, '0')}.png` }))
+
+// Hero slider images (first 10)
+const heroSlides = IMGS.slice(0, 10).map((img, i) => ({
+  ...img,
+  caption: [
+    'University of Mpumalanga — mentorship launch event',
+    'NMM at the Power of Two showcase',
+    'Panel discussion — Northern Cape Innovation Forum',
+    'Group mentorship session in action',
+    'Mentor-mentee graduation ceremony',
+    'NMM booth at a national conference',
+    'Workshop: From Pain to Pitch — CSIR programme',
+    'Students celebrating at an NMM event',
+    'Interview at the NMM stand',
+    'Networking at an NMM community event',
+  ][i],
+}))
+
+// Photo strip images (images 10–21)
+const stripPhotos = IMGS.slice(10, 22)
 
 const stats = [
   { label: 'People Impacted Since Inception', value: 7958, icon: 'fa-solid fa-users', color: 'text-red-400' },
@@ -160,54 +185,33 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Right  visual card stack */}
-            <div className="hidden lg:flex justify-center items-center relative">
-              <div className="relative w-full max-w-md">
-                {/* Main card */}
-                <div
-                  className="rounded-3xl p-8 text-center shadow-2xl relative z-10"
-                  style={{ background: 'rgba(255,255,255,0.05)', backdropFilter: 'blur(12px)', border: '1px solid rgba(255,255,255,0.12)' }}
-                >
-                  <div className="w-20 h-20 bg-red-600 rounded-2xl flex items-center justify-center mx-auto mb-5">
-                    <i className="fa-solid fa-handshake text-white text-4xl"></i>
-                  </div>
-                  <div className="text-white font-black text-2xl mb-1">The Power of Two</div>
-                  <p className="text-slate-300 text-sm mb-6">
-                    Mentorship doubles results  people with mentors are twice as likely to succeed.
-                  </p>
-                  <div className="grid grid-cols-2 gap-3">
-                    {[
-                      { label: 'Mentors', val: '1,862', icon: 'fa-user-tie', c: 'text-red-400' },
-                      { label: 'Impacted', val: '7,958+', icon: 'fa-chart-line', c: 'text-orange-400' },
-                    ].map(({ label, val, icon, c }) => (
-                      <div key={label} className="bg-white/5 rounded-xl p-3">
-                        <i className={`fa-solid ${icon} ${c} text-lg mb-1 block`}></i>
-                        <div className="text-white font-bold text-lg">{val}</div>
-                        <div className="text-slate-400 text-xs">{label}</div>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
+            {/* Right — image slider */}
+            <div className="hidden lg:block relative">
+              <div className="relative">
+                <ImageSlider
+                  images={heroSlides}
+                  height="h-[440px]"
+                  interval={3500}
+                  showDots={true}
+                  showArrows={true}
+                  className="shadow-2xl"
+                />
                 {/* Floating badge */}
-                <div
-                  className="absolute -top-4 -right-4 bg-amber-500 text-white text-xs font-bold px-3 py-2 rounded-xl shadow-lg z-20 flex items-center gap-1.5"
-                >
+                <div className="absolute -top-4 -right-4 bg-amber-500 text-white text-xs font-bold px-3 py-2 rounded-xl shadow-lg z-30 flex items-center gap-1.5">
                   <i className="fa-solid fa-star"></i>
                   10 Years of Impact
                 </div>
-
-                {/* Bottom floating card */}
+                {/* Bottom stat pill */}
                 <div
-                  className="absolute -bottom-6 -left-6 rounded-2xl px-5 py-4 shadow-xl z-20 flex items-center gap-3"
-                  style={{ background: 'rgba(15,35,68,0.95)', border: '1px solid rgba(255,255,255,0.1)' }}
+                  className="absolute -bottom-5 left-5 rounded-2xl px-5 py-3 shadow-xl z-30 flex items-center gap-3"
+                  style={{ background: 'rgba(26,5,7,0.92)', border: '1px solid rgba(255,255,255,0.12)', backdropFilter: 'blur(8px)' }}
                 >
-                  <div className="w-10 h-10 bg-orange-500 rounded-xl flex items-center justify-center">
-                    <i className="fa-solid fa-location-dot text-white"></i>
+                  <div className="w-9 h-9 bg-red-600 rounded-xl flex items-center justify-center">
+                    <i className="fa-solid fa-users text-white text-sm"></i>
                   </div>
                   <div>
-                    <div className="text-white text-xs font-bold">Nationwide</div>
-                    <div className="text-slate-400 text-xs">South Africa</div>
+                    <div className="text-white text-sm font-black">7,958+ Lives</div>
+                    <div className="text-slate-400 text-xs">Transformed Through Mentorship</div>
                   </div>
                 </div>
               </div>
@@ -234,7 +238,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Ã¢â€â‚¬Ã¢â€â‚¬ MISSION Ã¢â€â‚¬Ã¢â€â‚¬ */}
+      {/* ── THE MOVEMENT IN ACTION ── */}
+      <section className="py-14 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between mb-6">
+            <div>
+              <span className="section-tag">In Action</span>
+              <h2 className="text-2xl font-extrabold text-slate-900">The Movement in Pictures</h2>
+            </div>
+            <Link to="/impact" className="text-red-600 text-sm font-semibold hover:text-red-700 flex items-center gap-1.5">
+              See Our Impact <i className="fa-solid fa-arrow-right text-xs"></i>
+            </Link>
+          </div>
+          <PhotoStrip images={stripPhotos} />
+        </div>
+      </section>
+
+      {/* ── MISSION ── */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

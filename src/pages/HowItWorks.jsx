@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useScrollAnimation } from '../hooks/useAnimations'
+import ImageSlider from '../components/ImageSlider'
 
 const steps = [
   {
@@ -97,24 +98,26 @@ export default function HowItWorks() {
 
       {/* Mentorship defined */}
       <section className="py-16 bg-white border-b border-slate-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center animate-in">
-          <h2 className="text-2xl md:text-3xl font-extrabold text-slate-900 mb-4">What is Mentorship?</h2>
-          <p className="text-lg text-slate-600 leading-relaxed mb-6">
-            Mentorship is a <strong>partnership and relationship</strong> between two (or more) people to achieve mutually agreed goals
-            through the reciprocal sharing of knowledge, experience and wisdom.
-          </p>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-            {[
-              { icon: 'fa-solid fa-users-gear', title: 'Doubles Results', desc: 'People with mentors are twice as likely to succeed in business and career growth.' },
-              { icon: 'fa-solid fa-graduation-cap', title: 'Education Impact', desc: 'Mentees are twice as likely to aspire to and graduate from university.' },
-              { icon: 'fa-solid fa-briefcase', title: 'Business Growth', desc: 'Businesses with mentored leaders are twice as likely to grow, employ and survive beyond 5 years.' },
-            ].map(({ icon, title, desc }) => (
-              <div key={title} className="bg-red-50 rounded-2xl p-5">
-                <i className={`${icon} text-red-600 text-2xl mb-3 block`}></i>
-                <div className="font-bold text-slate-900 mb-1">{title}</div>
-                <div className="text-slate-600 text-sm">{desc}</div>
-              </div>
-            ))}
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="text-center lg:text-left animate-in">
+              <i className="fa-solid fa-quote-left text-red-200 text-5xl mb-4 block"></i>
+              <p className="text-2xl font-bold text-slate-800 leading-relaxed mb-4">
+                &ldquo;Mentorship is a partnership between two or more people to achieve mutually agreed goals through the reciprocal sharing of knowledge, experience and wisdom.&rdquo;
+              </p>
+              <span className="text-amber-500 font-semibold">NMM Definition</span>
+            </div>
+            <ImageSlider
+              images={[
+                { src: '/images/nmm-01.png', caption: 'University of Mpumalanga — NMM launch' },
+                { src: '/images/nmm-06.png', caption: 'Panel discussion — Innovation Forum' },
+                { src: '/images/nmm-10.png', caption: 'Mentor-mentee matching session' },
+                { src: '/images/nmm-16.png', caption: 'Programme kickoff event' },
+              ]}
+              height="h-[300px]"
+              interval={4200}
+              className="animate-in animate-in-delay-1 shadow-lg"
+            />
           </div>
         </div>
       </section>
@@ -242,7 +245,7 @@ export default function HowItWorks() {
       </section>
 
       {/* CTA */}
-      <section className="py-20" style={{ background: 'linear-gradient(135deg, #1d4ed8, #1e40af)' }}>
+      <section className="py-20" style={{ background: 'linear-gradient(135deg, #1A0507, #3D0C14)' }}>
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4">Ready to Start Your Journey?</h2>
           <p className="text-red-200 mb-8">Join thousands of South Africans already growing through the power of mentorship.</p>

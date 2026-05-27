@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useScrollAnimation } from '../hooks/useAnimations'
+import { PhotoStrip, FullBleedImage } from '../components/PhotoComponents'
 
 const timeline = [
   { year: '2015', event: 'NMM Founded', desc: 'Following a forum of business leaders who discussed how mentorship could address unemployment and poor entrepreneurial health in South Africa.' },
@@ -178,6 +179,44 @@ export default function About() {
           </div>
         </div>
       </section>
+
+      {/* Photo strip */}
+      <section className="py-12 bg-white overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="mb-5">
+            <span className="section-tag">Moments</span>
+            <h3 className="text-xl font-bold text-slate-900">NMM Events &amp; Milestones</h3>
+          </div>
+          <PhotoStrip images={[
+            { src: '/images/nmm-17.png', caption: 'NMM showcase event' },
+            { src: '/images/nmm-18.png', caption: 'Mentorship launch 2024' },
+            { src: '/images/nmm-19.png', caption: 'Community engagement' },
+            { src: '/images/nmm-20.png', caption: 'Annual gathering' },
+            { src: '/images/nmm-21.png', caption: 'Graduate celebration' },
+            { src: '/images/nmm-22.png', caption: 'University partnership' },
+            { src: '/images/nmm-23.png', caption: 'Panel discussion' },
+            { src: '/images/nmm-24.png', caption: 'Corporate partners night' },
+          ]} />
+        </div>
+      </section>
+
+      {/* Full-bleed image break */}
+      <FullBleedImage
+        src="/images/nmm-04.png"
+        overlayClass="bg-gradient-to-r from-black/80 via-black/60 to-black/30"
+        minHeight="min-h-[280px]"
+      >
+        <div className="max-w-7xl mx-auto px-8 py-12 flex flex-col md:flex-row md:items-center justify-between gap-6">
+          <div>
+            <h3 className="text-3xl font-black text-white mb-2">Ready to give back?</h3>
+            <p className="text-slate-300 text-lg">Join over 1,862 active mentors making a difference.</p>
+          </div>
+          <Link to="/get-involved" className="btn-primary whitespace-nowrap">
+            <i className="fa-solid fa-user-tie"></i>
+            Become a Mentor
+          </Link>
+        </div>
+      </FullBleedImage>
 
       {/* Partners section */}
       <section className="py-20" style={{ background: '#1A0507' }} id="partners">
